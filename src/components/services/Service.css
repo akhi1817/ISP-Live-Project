@@ -46,6 +46,27 @@ body {
     text-transform: uppercase;
     margin-top: 20px;
 }
+/* media query for title and subtitle */
+@media only screen and (max-width: 768px){
+  .title {
+    font-size: 30px;
+    font-weight:900;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.subtitle {
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+}
+
 
 .price2 {
     color: white;
@@ -93,13 +114,27 @@ body {
 .circle {
     width: 100px;
     height: 100px;
-    background-color: #a4cf00; /* Green background */
+    background-color: #a4cf00; 
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 160px;
+    margin-left: 170px;
   }
+  /* media query for features circle */
+  @media only screen and (max-width: 768px){
+    .circle {
+      width: 100px;
+      height: 100px;
+      background-color: #a4cf00;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 140px;
+    }
+  }
+
 /* internet plans */
 .internet-container{
     border-radius: 50px;
@@ -108,10 +143,22 @@ body {
     padding: 60px;
 
 }
+@media only screen and (max-width: 768px){
+  .internet-container{
+  
+    border-radius: 50px;
+    background: linear-gradient(to top,#121434,#1B1339);
+    padding:80px;
+    width:500px;
+
+}
+}
+  
+
 /* price tags */
 .card-container{
     background: linear-gradient(to right,#42415C,#33314F);
-    padding: 20px;
+    padding:40px;
     display: inline-block;
     margin-left: 30px;
 }
@@ -119,11 +166,10 @@ body {
     background: linear-gradient(to right,#FFFFFF,#FFFFFF);
     padding: 40px;
     display: inline-block;
-
     margin-left: 30px;
 }
 .price {
-    font-size: 80px;
+    font-size: 70px;
     font-weight: bold;
     color:#A0CF00;
     display: inline-block;
@@ -178,7 +224,7 @@ body {
 }
 /* plans */
 .progress-circle {
-    width: 150px;
+    width: 200px;
     height: 150px;
     border-radius: 50%;
     position: relative;
@@ -188,7 +234,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -234,7 +280,28 @@ body {
     stroke: #A0CF00;
     stroke-dashoffset: calc(440 - (440 * 100) / 100); 
   }
+/* buttons */
+.package-btn{
+  width:25%;
+}
+.plan-btn{
+  width:30%;
+}
+.faq-btn{
+  width:20%;
+}
 
+@media only screen and (max-width: 600px){
+  .package-btn{
+    width:75%;
+  }
+  .plan-btn{
+    width:80%;
+  }
+  .faq-btn{
+    width:70%;
+  }
+}
   /* bundle */
   .bundle-cards{
     border:1px solid black;
