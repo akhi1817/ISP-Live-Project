@@ -171,7 +171,7 @@ const Service = () => {
                         <button className='plan-btn btn btn-primary rounded-pill px-4 py-4  fw-bold '>Need More Help Choosing ?<i class="bi bi-chevron-right ms-3"></i></button>
                     </div>
             </div>
-            {/* Bundle */}
+        {/* Bundle */}
             <div className='row mt-5'>
                 <h1 className='text-dark fw-bold text-center mt-5'><em>Get More When You Bundle</em></h1>
                         <p className='text-secondary text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis
